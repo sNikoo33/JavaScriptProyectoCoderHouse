@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMarket</title>
+    <!-- Style CSS NO Bootstrap -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/estilos.css">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/2fb71d6bef.js" crossorigin="anonymous"></script>
+    <!-- SweetAlert 2 JS -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navegacion -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                <img src="./images/LogoMyMarket.png" width="150px">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#" class="nav-link">ShopNow</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#" class="nav-link">FastDinner</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Productos -->
+
+    <main>
+
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acción</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                    <tr id="footer">
+                        <th scope="row" colspan="5">No hay nada en el carrito!</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="row" id="cards"></div>
+        </div>
+
+        <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="clear-cart">
+                    vaciar todo
+                </button>
+            </td>
+            <td class="font-weight-bold">$<span>5000</span></td>
+        </template>
+
+        <template id="template-cart">
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td>
+                    <button class="btn btn-info btn-sm">
+                        +
+                    </button>
+                    <button class="btn btn-danger btn-sm">
+                        -
+                    </button>
+                </td>
+                <td>$ <span>500</span></td>
+            </tr>
+        </template>
+        
+        <div class="row justify-content-center align-items-center text-center gap-5 m-5" id="items">
+            
+        </div>
+
+
+        <template id="template-card">
+            <div class="col-xl-4 p-3 mb-5 bg-body rounded" style="width: 15rem;">
+
+                <a href=""><img src="" class="card-img-top"></a>
+
+                <div class="card-body m-4 text-center">
+                    <h5 class="card-title mb-3">CocaCola</h5>
+                    <p class="card-text fw-bold mb-3">$150</p>
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-basket-shopping"></i></a>
+                </div>
+            </div>
+        </template>
+
+    </main>
+
+    <!-- App JS -->
+    <script src="app.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

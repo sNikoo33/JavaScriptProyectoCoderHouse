@@ -1,0 +1,57 @@
+[
+    {
+        "price": 150,
+        "id": 1,
+        "title": "CocaCola",
+        "image": "/images/cocacola.jpg"
+    },
+
+    {
+        "price": 100,
+        "id": 2,
+        "title": "Agua mineral",
+        "image": "/images/cocacola.jpg"
+    },
+
+    {
+        "price": 150,
+        "id": 3,
+        "title": "Sprite",
+        "image": "/images/cocacola.jpg"
+    },
+
+    {
+        "price": 200,
+        "id": 4,
+        "title": "SpeedEnergy",
+        "image": "/images/cocacola.jpg"
+    },
+
+    {
+        "price": 200,
+        "id": 5,
+        "title": "Arroz",
+        "image": "/images/cocacola.jpg"
+    },
+
+    {
+        "price": 250,
+        "id": 6,
+        "title": "Fideos",
+        "image": "/images/cocacola.jpg"
+    },
+
+    {
+        "price": 230,
+        "id": 7,
+        "title": "Polenta",
+        "image": "/images/cocacola.jpg"
+    },
+
+    {
+        "price": 450,
+        "id": 8,
+        "title": "Papas Lays",
+        "image": "/images/cocacola.jpg"
+    }
+]
